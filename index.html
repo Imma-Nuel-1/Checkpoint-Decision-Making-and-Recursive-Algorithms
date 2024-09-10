@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Making and Recursive Algorithms</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.1em;
+        color: #555;
+      }
+      input {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Decision Making & Recursion</h2>
+
+      <!-- Leap Year Checker -->
+      <h3>Leap Year Checker</h3>
+      <input type="number" id="yearInput" placeholder="Enter year" />
+      <button onclick="checkLeapYear()">Check Leap Year</button>
+      <div id="leapYearResult" class="result"></div>
+
+      <!-- Ticket Pricing -->
+      <h3>Ticket Pricing</h3>
+      <input type="number" id="ageInput" placeholder="Enter age" />
+      <button onclick="checkTicketPrice()">Check Ticket Price</button>
+      <div id="ticketPriceResult" class="result"></div>
+
+      <!-- Fibonacci Sequence -->
+      <h3>Fibonacci Sequence</h3>
+      <input type="number" id="fibInput" placeholder="Enter n" />
+      <button onclick="calculateFibonacci()">Calculate Fibonacci</button>
+      <div id="fibonacciResult" class="result"></div>
+
+      <!-- Palindrome Checker -->
+      <h3>Palindrome Checker</h3>
+      <input type="text" id="palindromeInput" placeholder="Enter text" />
+      <button onclick="checkPalindrome()">Check Palindrome</button>
+      <div id="palindromeResult" class="result"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
